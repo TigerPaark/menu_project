@@ -2,6 +2,12 @@
 body {
   background: #A3C6C4;
 }
+h1.body {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  width: 100%;
+}
 .styled-box {
     height: 50px; /* 원하는 높이로 조절 */
     background-color: #d9d5ce; /* 이미지의 배경색 계열 */

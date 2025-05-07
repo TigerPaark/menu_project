@@ -1,0 +1,153 @@
+/* 전체 바디 */
+body {
+  background: #A3C6C4;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1.body {
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+  width: 100%;
+  font-size: 32px;
+}
+.styled-box {
+    height: 50px; /* 원하는 높이로 조절 */
+    background-color: #d9d5ce; /* 이미지의 배경색 계열 */
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    margin: 20px 0; /* 위아래 여백 */
+    
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+    font-size: 20px;
+    font-weight: bold;
+}
+/* 메인 컨테이너 스타일 */
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+.main-instruction-box {
+    background-color: #E0E7E9;  
+    border: 2px solid #8d6e63;  /* 브라운 테두리 */
+    padding: 15px;
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 상단 기능 레이아웃 (계산기, 메뉴 추천) */
+.top-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* 하단 기능 레이아웃 (맛집 추천) */
+.bottom-feature {
+    display: flex;
+    justify-content: center;
+}
+
+/* 넓은 박스 스타일 (맛집 추천용) */
+.wide-box {
+    width: 80% !important;
+    max-width: 800px;
+}
+
+/* 기능 박스 스타일 */
+.feature-box {
+    background-color: #E0E7E9;
+    border: 3px solid #8d6e63;
+    border-radius: 15px;
+    padding: 25px;
+    width: calc(50% - 20px); /* 2개씩 한 줄에 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .top-features {
+        flex-direction: column;
+    }
+    
+    .feature-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .wide-box {
+        width: 100% !important;
+    }
+}
+/* 이미지 컨테이너 */
+.feature-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.feature-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* 기능 설명 */
+.feature-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.feature-description h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.feature-description p {
+    color: #555;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+/* 기능 버튼 */
+.feature-button {
+    background-color: #A3C6C4;
+    border: 3px solid #8d6e63;
+    border-radius: 25px;
+    padding: 12px 24px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+.feature-button:hover {
+    background-color: #8d6e63;
+    color: white;
+}
+/* 푸터 스타일 */
+.main-footer {
+    background-color: #d9d5ce;
+    border-top: 2px solid #8d6e63;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    color: #555;
+}

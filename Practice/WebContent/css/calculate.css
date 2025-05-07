@@ -1,0 +1,181 @@
+/* 전체 바디 */
+body {
+  background: #A3C6C4;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1.body {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+.styled-box {
+    height: 50px; /* 원하는 높이로 조절 */
+    background-color: #d9d5ce; /* 이미지의 배경색 계열 */
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    margin: 20px 0; /* 위아래 여백 */
+    
+    display: flex;
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+} 
+
+.food-image {
+    width: 300px; /* 또는 필요 시 100% 등으로 조정 */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.instruction-box {
+    background-color: #E0E7E9;  
+    border: 2px solid #8d6e63;  /* 브라운 테두리 */
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 버튼 그룹 스타일 */
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+/* 버튼 스타일 */
+.menu-button {
+    background-color: #E0E7E9;
+    border: 2px solid #8d6e63;
+    border-radius: 20px;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.menu-button:hover {
+    background-color: #8d6e63;
+    color: white;
+}
+
+.menu-button.active {
+    background-color: #8d6e63;
+    color: white;
+}
+
+/* 추천 버튼 스타일 */
+.recommend-button {
+    background-color: #A3C6C4;
+    border: 3px solid #8d6e63;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.recommend-button:hover {
+    background-color: #8d6e63;
+    color: white;
+}
+
+/* 계산기 컨테이너 */
+.calculator-container {
+    background-color: #E0E7E9;
+    border: 2px solid #8d6e63;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 입력 그룹 스타일 */
+.input-group {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 8px 12px;
+    border: 2px solid #8d6e63;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 결과 박스 */
+.result-box {
+    background-color: #d9d5ce;
+    border: 2px solid #8d6e63;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.result-box p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.result-box strong {
+    font-size: 24px;
+    color: #333;
+}
+
+.operation-detail {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+}
+
+.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .calculator-container,
+    .result-box,
+    .instruction-box {
+        width: 90%;
+    }
+    
+    .input-group input {
+        width: 90%;
+    }
+}
